@@ -8,26 +8,40 @@ body {
 #graph {
     width: 500px;
     height: 500px;
-    margin-top:30px;
+    margin-top: 30px;
     margin-left: auto;
 }
 slider-text-input {
     display: block;
 }
 #label-checkboxes {
-    display:block;
+    display: block;
     margin-bottom: 10px;
     font-size: large;
     font-weight: bold;
-    margin-top:20px;
+    margin-top: 20px;
 }
 .wrapper {
     width: 200px;
     margin: auto;
-    display:relative;
     text-align: center;
 }
 .center-margin-top-sm {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+#sine-label {
+    margin-right: 20px;
+}
+.main-title {
+    text-align: center;
+    margin-top: 20px;
+}
+#stop-button {
+    display: block;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: red;
+    color: white;
 }

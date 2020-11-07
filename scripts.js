@@ -1,9 +1,9 @@
 class sliderTextInput extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<label for="slider">Slider</label>
-                          <input type="range" id="slider" name="slider" min="1" max="10" value="1">
+                          <input type="range" class="form-control-range-sm" id="slider" name="slider" min="1" max="10" value="1">
                           <label for="text">Text</label>
-                          <input type="number" id="text" name="text" min="1" max="10" value="1">`;
+                          <input type="number" class="form-control-sm" id="text" name="text" min="1" max="10" value="1">`;
         
         let slider = document.getElementById('slider');
         let text = document.getElementById('text');
@@ -34,7 +34,7 @@ Plotly.plot('graph', [{
 
 let source = new EventSource('http://vmzakova.fei.stuba.sk/sse/sse.php');
 
-source.addEventListener("message", function(e) {
+source.addEventListener("message", logData = function (e) {
     console.log(e.data);
     let data = JSON.parse(e.data);
     let multiplier = document.getElementById('slider').value;
@@ -60,6 +60,13 @@ cosine.addEventListener('change', function() {
     } else {
         Plotly.restyle(document.getElementById("graph"), {"visible": true}, [1]);
     }
+});
+
+let btn = document.getElementById('stop-button');
+
+btn.addEventListener('click', function() {
+    source.removeEventListener("message", logData);
+    this.innerHTML = "Stopped";
 });
 
 

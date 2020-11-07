@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
+
+        <h1 class="main-title">Noisy sine and cosine</h1>
+        <h3 class="main-title">Wait until x gets to ~ 300 to see sine and cosine in a not-noisy states</h3>
          
         <div class="container">
             <div class="row">
@@ -20,14 +23,15 @@
         <div class="wrapper">
             <label id="label-checkboxes">Show or hide traces</label>
             <input type="checkbox" id="sine" name="sine" checked="checked">
-            <label for="sine"> Sine</label>
+            <label for="sine" id="sine-label"> Sine</label>
             <input type="checkbox" id="cosine" name="cosine" checked="checked">
             <label for="cosine"> Cosine</label>
         </div>        
 
         <slider-text-input class="center-margin-top-sm"></slider-text-input>
-           
 
+        <button id="stop-button" type="button">Stop</button>
+           
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <script src="scripts.js"></script>
