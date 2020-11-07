@@ -1,0 +1,33 @@
+body {
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    background-size: cover;
+}
+#graph {
+    width: 500px;
+    height: 500px;
+    margin-top:30px;
+    margin-left: auto;
+}
+slider-text-input {
+    display: block;
+}
+#label-checkboxes {
+    display:block;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-top:20px;
+}
+.wrapper {
+    width: 200px;
+    margin: auto;
+    display:relative;
+    text-align: center;
+}
+.center-margin-top-sm {
+    text-align: center;
+    margin-top: 30px;
+}

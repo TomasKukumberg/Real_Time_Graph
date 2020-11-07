@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Graph</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+         
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="graph"></div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <label id="label-checkboxes">Show or hide traces</label>
+            <input type="checkbox" id="sine" name="sine" checked="checked">
+            <label for="sine"> Sine</label>
+            <input type="checkbox" id="cosine" name="cosine" checked="checked">
+            <label for="cosine"> Cosine</label>
+        </div>        
+
+        <slider-text-input class="center-margin-top-sm"></slider-text-input>
+           
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
