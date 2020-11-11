@@ -6,29 +6,29 @@ body {
     background-size: cover;
 }
 #graph {
-    width: 500px;
-    height: 500px;
-    margin-top: 30px;
+    width: 450px;
+    height: 450px;
+    margin-top: 20px;
     margin-left: auto;
 }
 slider-text-input {
     display: block;
+}
+.center-margin-top-sm {
+    text-align: center;
+    margin-top: 10px;
 }
 #label-checkboxes {
     display: block;
     margin-bottom: 10px;
     font-size: large;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .wrapper {
     width: 200px;
     margin: auto;
     text-align: center;
-}
-.center-margin-top-sm {
-    text-align: center;
-    margin-top: 10px;
 }
 #sine-label {
     margin-right: 20px;
@@ -36,6 +36,10 @@ slider-text-input {
 .main-title {
     text-align: center;
     margin-top: 20px;
+}
+.main-title2 {
+    text-align: center;
+    margin-top: 5px;
 }
 #stop-button {
     display: block;

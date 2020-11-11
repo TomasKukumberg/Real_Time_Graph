@@ -53,7 +53,6 @@ sine.addEventListener('change', function(){
     }
     
 });
-
 cosine.addEventListener('change', function() {
     if(cosine.checked === false) {
         Plotly.restyle(document.getElementById("graph"), {"visible": false}, [1]);
@@ -68,6 +67,3 @@ btn.addEventListener('click', function() {
     source.removeEventListener("message", logData);
     this.innerHTML = "Stopped";
 });
-
-
-/*, {plot_bgcolor:"lightgray", paper_bgcolor:"lightgray"} */
