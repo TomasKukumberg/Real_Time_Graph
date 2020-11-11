@@ -1,12 +1,12 @@
 class sliderTextInput extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<label for="slider">Slider</label>
-                          <input type="range" class="form-control-range-sm" id="slider" name="slider" min="1" max="10" value="1">
+                          <input type="range" class="form-control-range-sm" min="1" max="10" value="1">
                           <label for="text">Text</label>
-                          <input type="number" class="form-control-sm" id="text" name="text" min="1" max="10" value="1">`;
+                          <input type="number" class="form-control-sm" min="1" max="10" value="1">`;
         
-        let slider = document.getElementById('slider');
-        let text = document.getElementById('text');
+        let slider = this.children[1];
+        let text = this.children[3];
         
         slider.addEventListener('input', function() {
             text.value = slider.value;
@@ -37,7 +37,7 @@ let source = new EventSource('http://vmzakova.fei.stuba.sk/sse/sse.php');
 source.addEventListener("message", logData = function (e) {
     console.log(e.data);
     let data = JSON.parse(e.data);
-    let multiplier = document.getElementById('slider').value;
+    let multiplier = document.getElementById('wc').children[1].value;
     Plotly.extendTraces('graph', { x:[[data.x]], y: [[data.y1 * multiplier]] }, [0] );
     Plotly.extendTraces('graph', { x:[[data.x]], y: [[data.y2 * multiplier]] }, [1] );
 }, false);
